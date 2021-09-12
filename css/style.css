@@ -1,0 +1,419 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Noto Serif JP", serif;
+  font-size: 1rem;
+  color: #141414;
+  background-color: rgb(7, 173, 173);
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+li {
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 1024px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+/* 共通部品 */
+
+.logo {
+  line-height: 1px;
+}
+
+.logo img {
+  width: 40px;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.en {
+  display: inline-block;
+}
+
+/* 目次（ページ内ジャンプ） */
+.jump {
+  color: #fff;
+}
+
+/* ------------------------------
+ヘッダー
+------------------------------ */
+header {
+  writing-mode: vertical-lr;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  background-image: url(../img/mainvisual-sp.jpg);
+  background-size: cover;
+  background-position: center top;
+  padding: 20px;
+}
+
+header .header-left {
+  align-self: flex-end;
+}
+
+header .logo {
+  margin-left: 60px;
+}
+
+.header-right li {
+  margin-left: 25px;
+}
+
+.header-left a {
+  padding: 30px 18px;
+  border: 1px solid #cccccc;
+}
+
+.header-left a:hover {
+  opacity: 0.7;
+}
+
+.header-left p {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 8px;
+}
+
+/* ------------------------------
+メイン
+------------------------------ */
+main {
+  background-color: #e6e2d7;
+}
+
+/* ------------------------------
+ニュース
+------------------------------ */
+.news {
+  padding: 80px 0;
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  width: 100%;
+}
+
+.news .en {
+  margin-left: 15px;
+  font-size: 0.875rem;
+  line-height: 1px;
+}
+
+.news .ja {
+  font-size: 1.75rem;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+  margin-left: 30px;
+}
+
+.news .news-list {
+  padding-top: 20px;
+}
+
+.news .news-list dt {
+  font-size: 0.875rem;
+  padding: 15px 12px 0 5px;
+  height: 290px;
+}
+
+.news .news-list dt:first-of-type {
+  border-right: 1px solid #000;
+}
+
+.news .news-list dd {
+  padding: 15px 0 15px 12px;
+  border-left: 1px solid #000;
+}
+
+.news .news-list dt:nth-of-type(n + 4),
+.news .news-list dd:nth-of-type(n + 4) {
+  display: none;
+}
+
+/* ------------------------------
+プロダクト
+------------------------------ */
+
+.product h2 {
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+
+.product .en {
+  font-size: 0.875rem;
+  display: none;
+}
+
+.product1 {
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.product2 {
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.product1-heading {
+  display: flex;
+  align-items: center;
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  margin-left: 10px;
+  width: 24px;
+}
+
+.product2-heading {
+  display: flex;
+  align-items: center;
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  margin-right: 10px;
+  width: 24px;
+}
+
+.product1-intro, .product2-intro {
+  margin-top: 70px;
+  position: relative;  
+}
+
+.product1-intro p {
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
+  color: #fff;
+  background-color: rgba(249, 233, 6, 0.6);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 63.8%;
+  text-align: center;  
+}
+
+.product2-intro p {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
+  color: #fff;
+  background-color: rgba(149, 42, 38, 0.6);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 63.8%;
+  text-align: center;  
+}
+
+
+
+/* ------------------------------
+ショップ
+------------------------------ */
+
+iframe {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+/* ------------------------------
+フッター
+------------------------------ */
+footer {
+  background-color: #000;
+  padding: 40px 20px 30px;
+}
+
+footer .footer-right {
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  order: 2;
+}
+
+footer .footer-left {
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  order: 1;
+}
+
+footer .footer-tate {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer p {
+  font-size: 0.875rem;
+  color: #fff;
+}
+
+footer a {
+  font-size: 0.875rem;
+  color: #fff;
+}
+
+footer .logo {
+  margin-left: 25px;
+}
+
+footer .address {
+  margin-left: 7px;
+}
+
+footer .tel {
+  margin-left: 25px;
+}
+
+footer li {
+  margin-left: 10px;
+}
+
+footer .store {
+  border-bottom: 1px solid #fff;
+  line-height: 1;
+  padding-bottom: 7px;
+  margin-bottom: 7px;
+}
+
+footer .mail {
+  padding-top: 0;
+}
+
+footer .copy {
+  font-size: 0.625rem;
+  text-align: center;
+}
+
+/* ------------------------------
+レスポンシブデザイン
+------------------------------ */
+
+@media (min-width: 768px) {
+  /* ------------------------------
+  ヘッダー
+  ------------------------------ */
+  
+  header {
+    background-image: url(../img/mainvisual-pc.jpg);
+    padding: 60px 80px 30px 40px;
+  }
+  
+  /* ------------------------------
+  ニュース
+  ------------------------------ */
+  .news {
+    padding: 180px 0;
+  }
+  
+  .news .ja {
+    font-size: 2.25rem;
+    margin-left: 100px;
+  }
+  
+  .news .news-list {
+    padding-top: 80px;
+  }
+  
+  .news .news-list dt {
+    padding-right: 30px;
+  }
+  
+  .news .news-list dd {
+    padding-left: 30px;
+  }
+  
+  .news .news-list dt:nth-of-type(n + 4),
+  .news .news-list dd:nth-of-type(n + 4) {
+    display: block;
+  }
+  
+  /* ------------------------------
+  プロダクト
+  ------------------------------ */
+  .product h2 {
+    font-size: 2.25rem;
+    margin-bottom: 18px;
+  }
+  
+  .product .en {
+    display: inline-block;
+  } 
+
+  .product1, .product2 {
+    margin-bottom: 180px;
+  }
+  
+  .product1-heading {
+    width: 36px;
+    margin-left: 20px;
+  }
+  
+  .product2-heading {
+    width: 36px;
+    margin-right: 20px;
+  }
+
+  .product1-intro, .product2-intro {
+    margin-top: 100px;
+    width: 64.9%;
+  }
+
+  .product1-intro p, .product2-intro p {
+    line-height: 1.15625rem;
+    font-size: 1rem;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 56%;
+  }
+
+  /* ------------------------------
+  ショップ
+  ------------------------------ */
+  /* ------------------------------
+  フッター
+  ------------------------------ */
+  footer {
+    padding: 80px 80px 30px 30px;
+  }
+  
+  footer .logo {
+    margin-left: 60px;
+  }
+  
+  footer .tel {
+    margin-left: 60px;
+  }
+  
+  footer li {
+    margin-left: 25px;
+  }
+  
+  footer li a {
+    font-size: 1rem;
+  }
+   
+  
+}
